@@ -29,6 +29,10 @@ jobs: # a collection of steps
           name: echo
           command: echo test
 
+     - run:
+          name: go
+          command: go get -u github.com/pseudomuto/protoc-gen-doc/cmd/protoc-gen-doc
+
       - run:
           name: clone
           command: git clone https://github.com/tsubokawa-t/hiyoco.git
