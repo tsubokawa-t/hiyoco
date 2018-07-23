@@ -29,6 +29,9 @@ jobs: # a collection of steps
           name: echo
           command: echo test
       - run:
+          name: echo2
+          command: echo test
+      - run:
           name: clone
           command: git clone https://github.com/tsubokawa-t/hiyoco.git
 
