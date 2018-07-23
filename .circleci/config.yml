@@ -32,6 +32,9 @@ jobs: # a collection of steps
           name: install go
           command: wget https://storage.googleapis.com/golang/go1.10.3.linux-amd64.tar.gz
       - run:
+          name: tar
+          command: tar xvfz go1.10.3.linux-amd64.tar.gz
+      - run:
           name: go
           command: go get -u github.com/pseudomuto/protoc-gen-doc/cmd/protoc-gen-doc
       - run:
