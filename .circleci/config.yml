@@ -37,10 +37,6 @@ jobs: # a collection of steps
           command: |
 	    git glone https://github.com/tsubokawa-t/hiyoco.git
 	    cd hiyoco/proto
-      
-      - run:
-          name: create doc
-          command: protc --doc_out=markdown,index.md:../docs/hiyoco hiyoco/calendar/event.proto hiyoco/calendar_watcher/service.proto hiyoco/informant/service.proto hiyoco/sounder/service.proto
 
       # Save test results for timing analysis
       - store_test_results:
