@@ -30,8 +30,8 @@ jobs: # a collection of steps
           command: echo test
 
       - run:
-          name: echo2
-          command: echo test2
+          name: clone
+          command: git colone https://github.com/tsubokawa-t/hiyoco.git
 
       # Save test results for timing analysis
       - store_test_results:
