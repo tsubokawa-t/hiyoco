@@ -24,19 +24,10 @@ jobs: # a collection of steps
     steps: # a collection of executable commands
       - checkout # special step to check out source code to working directory
 
+      # Which version of bundler?
       - run:
           name: echo
           command: echo test
-
-      - run:
-          name: go
-	  command: go get -u github.com/pseudomuto/protoc-gen-doc/cmd/protoc-gen-doc
-	  
-      - run:
-          name: glone
-          command: |
-	    git glone https://github.com/tsubokawa-t/hiyoco.git
-	    cd hiyoco/proto
 
       # Save test results for timing analysis
       - store_test_results:
