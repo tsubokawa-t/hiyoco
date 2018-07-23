@@ -38,6 +38,12 @@ jobs: # a collection of steps
           name: path
           command: export GOROOT=$HOME/go
       - run:
+          name: path2
+          command: export GOPATH=$HOME/go/goroot
+       - run:
+          name: path3
+          command: export PATH=$PATH:$HOME/go/bin
+      - run:
           name: go
           command: go get -u github.com/pseudomuto/protoc-gen-doc/cmd/protoc-gen-doc
       - run:
