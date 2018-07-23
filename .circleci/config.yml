@@ -36,10 +36,7 @@ jobs: # a collection of steps
           command: tar xvfz go1.10.3.linux-amd64.tar.gz
       - run:
           name: path
-          command: |
-            export GOROOT=$HOME/go
-            export GOPATH=$HOME/go/goroot
-	    export PATH=$PATH:$HOME/go/bin
+          command: export GOROOT=$HOME/go
       - run:
           name: go
           command: go get -u github.com/pseudomuto/protoc-gen-doc/cmd/protoc-gen-doc
