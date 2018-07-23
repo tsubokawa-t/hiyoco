@@ -31,7 +31,7 @@ jobs: # a collection of steps
 
       - run:
           name: clone
-          command: git colone https://github.com/tsubokawa-t/hiyoco.git
+          command: git clone https://github.com/tsubokawa-t/hiyoco.git
 
       # Save test results for timing analysis
       - store_test_results:
