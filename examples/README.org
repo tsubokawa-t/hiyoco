@@ -5,17 +5,19 @@
 
 * Usage
 1. bundle インストール
-  以下のコマンドを実行する．
+
   #+BEGIN_SRC sh
   $ bundle install --path=vendor/bundle
   #+END_SRC
 2. .protoファイルのコンパイル
+
   以下のコマンドを実行し，.protoファイルをコンパイルする．
   #+BEGIN_SRC sh
   $ chmod +x compile_proto.sh
   $ ./compile_proto.sh
   #+END_SRC
 3. スクリプトの実行
+
   以下のコマンドを実行する．
   #+BEGIN_SRC sh
   $ chmod +x run.sh
